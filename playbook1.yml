@@ -1,0 +1,5 @@
+---
+- name: Install Nginx Web Server on RedHat Family
+  yum:
+    name=nginx
+    state=latest
