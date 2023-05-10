@@ -1,0 +1,8 @@
+[slaves]
+slave@slave1
+slave@slave2
+
+
+[slave1]
+slave@slave1
+
