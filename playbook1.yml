@@ -1,5 +1,9 @@
 ---
-- name: Install Nginx Web Server on RedHat Family
-  yum:
-    name=nginx
-    state=latest
+- hosts: all
+  become: true
+  tasks:
+    - name: yum install nano
+      ansible.builtin.yum:
+         name: nano
+         state: present
+         update_cache: true
